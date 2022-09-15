@@ -1,26 +1,35 @@
 import classNames from 'classnames'
-import React from "react";
+import React, {useContext} from "react";
+import {MenuContext} from "./menu";
 
 export interface MenuItemProps {
-    index?: number;
-    disabled?: boolean ;
+    index?: string;
+    disabled?: boolean;
     className?: string;
     style?: React.CSSProperties;
     children: React.ReactNode
 }
 
-const MenuItem: React.FC<MenuItemProps> = (props)=>{
-    const {  disabled, className, children, style } = props
-    const classes = classNames('menu-item',className,{
-        'is-disabled': disabled
+const MenuItem: React.FC<MenuItemProps> = (props) => {
+    const {disabled, className, children, style, index} = props
+    const context = useContext(MenuContext)
+    const classes = classNames('menu-item', className, {
+        'is-disabled': disabled,
+        'is-active': context.index === index
     })
+    const handleClick = () => {
+        if (context.onSelect && !disabled && typeof index === 'string') {
+            context.onSelect(index)
+        }
+    }
     return (
-        <li className={classes} style={style}> {children} </li>
+        <li className={classes} style={style} onClick={handleClick}> {children} </li>
     )
 }
 
 MenuItem.defaultProps = {
-    index: 0
+    index: '0'
 }
 
+MenuItem.displayName = 'MenuItem'
 export default MenuItem

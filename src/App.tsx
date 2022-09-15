@@ -2,15 +2,22 @@ import React from 'react';
 import Button, {ButtonSize, ButtonType} from "./components/Button/button";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
+import SubMenu from "./components/Menu/subMenu";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Menu defaultIndex={0}>
+          <Menu defaultIndex='0' mode='vertical' defaultOpenSubMenus={['3']}>
               <MenuItem>cool link</MenuItem>
               <MenuItem>cool link 2</MenuItem>
-              <MenuItem>cool link 3</MenuItem>
+              <MenuItem disabled>cool link 3</MenuItem>
+
+              <SubMenu title="dropMenu">
+                  <MenuItem>drop 1</MenuItem>
+                  <MenuItem>drop 2</MenuItem>
+                  <MenuItem>drop 3</MenuItem>
+              </SubMenu>
           </Menu>
 
 
