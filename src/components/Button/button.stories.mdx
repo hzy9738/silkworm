@@ -1,0 +1,37 @@
+import {Meta, Story, Canvas} from "@storybook/addon-docs/blocks";
+import Button from './button';
+import {action} from '@storybook/addon-actions';
+
+
+<Meta title="xxui/Button" component={Button}/>
+
+## Button
+
+> 常用的按钮组件
+
+
+
+
+### 基础使用如下
+<Canvas>
+  <Story name="default">
+    <Button onClick={action('clicked')}>default</Button>
+  </Story>
+</Canvas>
+
+### 不同尺寸
+<Canvas>
+  <Story name="size">
+    <Button size="lg">large</Button>
+    <Button size="sm">small</Button>
+  </Story>
+</Canvas>
+
+### 类型
+<Canvas>
+  <Story name="type">
+    <Button btnType="primary">primary</Button>
+    <Button btnType="danger">danger</Button>
+    <Button btnType="link" href="https://google.com" target="_blank">link</Button>
+  </Story>
+</Canvas>
