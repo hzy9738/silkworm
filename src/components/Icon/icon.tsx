@@ -11,6 +11,16 @@ export interface IconProps extends FontAwesomeIconProps {
     icon: IconProp;
 }
 
+
+
+/**
+ * 页面中最常用的的图标元素
+ * ### 引用方法
+ *
+ * ~~~js
+ * import { Icon } from 'xxui'
+ * ~~~
+ */
 export const Icon: React.FC<IconProps> = (props) => {
     const {className, theme, ...restProps } = props
     const classes = classNames('xx-icon',className, {
@@ -28,4 +38,4 @@ Icon.defaultProps = {
     icon:'coffee'
 }
 
-export default Icon
+export default Icon;
