@@ -1,7 +1,26 @@
 {
   "name": "xxui",
   "version": "0.1.0",
-  "private": true,
+  "description": "React components library",
+  "author": "hzy9738",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "Component",
+    "UI",
+    "React"
+  ],
+  "homepage": "https://github.com/hzy9738/xxui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hzy9738/xxui"
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
@@ -15,7 +34,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run build-ts && npm run build-css",
+    "build-ts": "tsc -p tsconfig.build.json",
+    "build-css": "node-sass src/styles/index.scss dist/index.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -77,6 +99,7 @@
     "classnames": "^2.3.1",
     "node-sass": "^7.0.1",
     "prop-types": "^15.8.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.8.2",
     "webpack": "^5.74.0"
   }
