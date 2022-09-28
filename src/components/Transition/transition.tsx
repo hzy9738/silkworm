@@ -1,28 +1,28 @@
-import React, {ReactNode} from "react";
-import { CSSTransitionProps } from "react-transition-group/CSSTransition";
-import {CSSTransition} from "react-transition-group";
+import React, { ReactNode } from 'react'
+import { CSSTransitionProps } from 'react-transition-group/CSSTransition'
+import { CSSTransition } from 'react-transition-group'
 
 type AnimationName = 'zoom-in-top' | 'zoom-in-left' | 'zoom-in-bottom' | 'zoom-in-right'
 
-type TransitionProps = CSSTransitionProps  & {
+type TransitionProps = CSSTransitionProps & {
     animation?: AnimationName;
     wrapper?: boolean;
     children: ReactNode;
 }
 
-const Transition: React.FC<TransitionProps> =  (props)=>{
-    const {children,classNames,animation,wrapper,...restProps} = props
+const Transition: React.FC<TransitionProps> = (props) => {
+  const { children, classNames, animation, wrapper, ...restProps } = props
 
-    return (
-        <CSSTransition classNames={ classNames ? classNames : animation} {...restProps}>
-            { wrapper ? <div>{children}</div> : children }
-        </CSSTransition>
-    )
+  return (
+    <CSSTransition classNames={ classNames || animation} {...restProps}>
+      { wrapper ? <div>{children}</div> : children }
+    </CSSTransition>
+  )
 }
 
 Transition.defaultProps = {
-    unmountOnExit:true,
-    appear: true,
-    wrapper: false
+  unmountOnExit: true,
+  appear: true,
+  wrapper: false
 }
 export default Transition
