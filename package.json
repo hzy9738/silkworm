@@ -45,9 +45,15 @@
     "build-storybook": "build-storybook -c .storybook -o docs",
     "prepublishOnly": "npm run build"
   },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "lint-staged"
     }
   },
   "browserslist": {
