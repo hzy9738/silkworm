@@ -11,8 +11,8 @@ var __assign = (this && this.__assign) || function () {
 };
 import { jsxs as _jsxs } from "react/jsx-runtime";
 import classNames from 'classnames';
-import { useContext } from "react";
-import { MenuContext } from "./menu";
+import { useContext } from 'react';
+import { MenuContext } from './menu';
 export var MenuItem = function (props) {
     var disabled = props.disabled, className = props.className, children = props.children, style = props.style, index = props.index;
     var context = useContext(MenuContext);

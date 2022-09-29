@@ -1,4 +1,4 @@
-.xx-menu {
+.silkworm-menu {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -51,7 +51,7 @@
         transform: rotate(180deg) !important;
       }
     }
-    .xx-submenu {
+    .silkworm-submenu {
       //display: none;
       list-style:none;
       padding-left: 0;
@@ -67,7 +67,7 @@
         }
       }
     }
-    .xx-submenu.menu-opened {
+    .silkworm-submenu.menu-opened {
       //display: block;
     }
   }
@@ -77,7 +77,7 @@
   >.menu-item {
     border-bottom: $menu-item-active-border-width solid transparent;
   }
-  .xx-submenu {
+  .silkworm-submenu {
     position: absolute;
     background: $white;
     z-index: 100;

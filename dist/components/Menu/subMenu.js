@@ -11,10 +11,10 @@ var __assign = (this && this.__assign) || function () {
 };
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import classNames from 'classnames';
-import React, { useContext, useState } from "react";
-import { MenuContext } from "./menu";
-import Icon from "../Icon/icon";
-import Transition from "../Transition/transition";
+import React, { useContext, useState } from 'react';
+import { MenuContext } from './menu';
+import Icon from '../Icon/icon';
+import Transition from '../Transition/transition';
 export var SubMenu = function (props) {
     var context = useContext(MenuContext);
     var index = props.index, title = props.title, className = props.className, children = props.children;
@@ -43,7 +43,7 @@ export var SubMenu = function (props) {
     } : {};
     var renderChildren = function () {
         var subMenuClasses = classNames('xx-submenu', {
-            'menu-opened': menuOpen,
+            'menu-opened': menuOpen
         });
         var childrenComponent = React.Children.map(children, function (child, i) {
             var childElement = child;
@@ -54,9 +54,9 @@ export var SubMenu = function (props) {
                 console.error('Warning: Menu has a child which is not a MenuItem component');
             }
         });
-        return (_jsx(Transition, __assign({ in: menuOpen, timeout: 300, animation: "zoom-in-top" }, { children: _jsx("ul", __assign({ className: subMenuClasses }, { children: childrenComponent })) })));
+        return (_jsx(Transition, __assign({ in: menuOpen, timeout: 300, animation: 'zoom-in-top' }, { children: _jsx("ul", __assign({ className: subMenuClasses }, { children: childrenComponent })) })));
     };
-    return (_jsxs("li", __assign({ className: classes }, hoverEvents, { children: [_jsxs("div", __assign({ className: "submenu-title" }, clickEvents, { children: [title, _jsx(Icon, { icon: "angle-down", className: "arrow-icon" })] })), renderChildren()] }), index));
+    return (_jsxs("li", __assign({ className: classes }, hoverEvents, { children: [_jsxs("div", __assign({ className: 'submenu-title' }, clickEvents, { children: [title, _jsx(Icon, { icon: 'angle-down', className: 'arrow-icon' })] })), renderChildren()] }), index));
 };
 SubMenu.displayName = 'SubMenu';
 export default SubMenu;

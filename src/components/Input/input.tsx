@@ -30,7 +30,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
  */
 export const Input: FC<InputProps> = (props) => {
   const { disabled, size, icon, prepend, append, style, ...restProps } = props
-  const classes = classNames('xx-input-wrapper', {
+  const classes = classNames('silkworm-input-wrapper', {
     [`input-size-${size}`]: size,
     'is-disabled': disabled,
     'input-group': prepend || append,
@@ -49,10 +49,10 @@ export const Input: FC<InputProps> = (props) => {
 
   return (
     <div className={classes} style={style}>
-      {prepend && <div className='xx-input-group-prepend'>{prepend}</div>}
+      {prepend && <div className='silkworm-input-group-prepend'>{prepend}</div>}
       {icon && <div className='icon-wrapper'><Icon icon={icon} title={`title-${icon}`}></Icon></div>}
-      <input className='xx-input-inner' disabled={disabled} {...restProps} />
-      {append && <div className='xx-input-group-append'>{append}</div>}
+      <input className='silkworm-input-inner' disabled={disabled} {...restProps} />
+      {append && <div className='silkworm-input-group-append'>{append}</div>}
     </div>
   )
 }

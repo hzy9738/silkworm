@@ -21,8 +21,8 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import classNames from "classnames";
-import Icon from "../Icon/icon";
+import classNames from 'classnames';
+import Icon from '../Icon/icon';
 /**
  * Input 输入框 通过鼠标或键盘输入内容，是最基础的表单域的包装。
  *

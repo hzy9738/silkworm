@@ -5,7 +5,7 @@
 ### 安装
 
 ~~~javascript
-npm install xxui --save
+npm install silkworm --save
 ~~~
 
 ### 使用
@@ -14,7 +14,7 @@ npm install xxui --save
 // 加载样式
 import 'xxui/dist/index.css'
 // 引入组件
-import { Button } from 'xxui'
+import { Button } from 'silkworm'
 ~~~
 
 ### 一些本地开发命令

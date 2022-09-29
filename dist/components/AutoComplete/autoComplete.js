@@ -21,12 +21,12 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { Input } from "../Input/input";
-import { useEffect, useState, useRef } from "react";
-import Icon from "../Icon/icon";
-import classNames from "classnames";
-import useDebounce from "../../hooks/useDebounce";
-import useClickOutside from "../../hooks/useClickOutside";
+import { Input } from '../Input/input';
+import { useEffect, useState, useRef } from 'react';
+import Icon from '../Icon/icon';
+import classNames from 'classnames';
+import useDebounce from '../../hooks/useDebounce';
+import useClickOutside from '../../hooks/useClickOutside';
 /**
  * AutoComplete 下拉输入框 通过鼠标或键盘输入内容。
  *
@@ -111,14 +111,14 @@ export var AutoComplete = function (props) {
         return renderOption ? renderOption(item) : item.value;
     };
     var generateDropdown = function () {
-        return (_jsxs("ul", __assign({ className: "xx-suggestion-list" }, { children: [loading &&
-                    _jsx("div", __assign({ className: "suggstions-loading-icon" }, { children: _jsx(Icon, { icon: "spinner", spin: true }) })), suggestions.map(function (item, index) {
+        return (_jsxs("ul", __assign({ className: 'xx-suggestion-list' }, { children: [loading &&
+                    _jsx("div", __assign({ className: 'suggstions-loading-icon' }, { children: _jsx(Icon, { icon: 'spinner', spin: true }) })), suggestions.map(function (item, index) {
                     var cnames = classNames('suggestion-item', {
                         'is-active': index === highlightIndex
                     });
                     return (_jsx("li", __assign({ className: cnames, onClick: function () { return handleSelect(item); } }, { children: renderTemplate(item) }), index));
                 })] })));
     };
-    return (_jsxs("div", __assign({ className: "xx-auto-complete", ref: componentRef }, { children: [_jsx(Input, __assign({ value: inputValue, onChange: handleChange, onKeyDown: handleKeyDown }, restProps)), generateDropdown()] })));
+    return (_jsxs("div", __assign({ className: 'xx-auto-complete', ref: componentRef }, { children: [_jsx(Input, __assign({ value: inputValue, onChange: handleChange, onKeyDown: handleKeyDown }, restProps)), generateDropdown()] })));
 };
 export default AutoComplete;

@@ -1,5 +1,5 @@
-import { FontAwesomeIconProps } from "@fortawesome/react-fontawesome";
-import React from "react";
+import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 export declare type ThemeProps = 'primary' | 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'light' | 'dark';
 export interface IconProps extends FontAwesomeIconProps {

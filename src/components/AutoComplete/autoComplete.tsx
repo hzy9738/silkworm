@@ -103,7 +103,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
   }
   const generateDropdown = () => {
     return (
-      <ul className='xx-suggestion-list'>
+      <ul className='silkworm-suggestion-list'>
         {loading &&
                   <div className='suggstions-loading-icon'>
                     <Icon icon='spinner' spin/>
@@ -123,7 +123,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
     )
   }
   return (
-    <div className='xx-auto-complete' ref={componentRef}>
+    <div className='silkworm-auto-complete' ref={componentRef}>
       <Input value={inputValue}
         onChange={handleChange}
         onKeyDown={handleKeyDown}

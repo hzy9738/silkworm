@@ -11,7 +11,7 @@ var __assign = (this && this.__assign) || function () {
 };
 import { jsx as _jsx } from "react/jsx-runtime";
 import classNames from 'classnames';
-import React, { createContext, useState } from "react";
+import React, { createContext, useState } from 'react';
 export var MenuContext = createContext({ index: '0' });
 /**
  * 为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
@@ -24,7 +24,7 @@ export var Menu = function (props) {
     var _a = useState(defaultIndex), currentActive = _a[0], setActive = _a[1];
     var classes = classNames('xx-menu', className, {
         'menu-vertical': mode === 'vertical',
-        'menu-horizontal': mode !== 'vertical',
+        'menu-horizontal': mode !== 'vertical'
     });
     var handleClick = function (index) {
         setActive(index);
@@ -33,7 +33,7 @@ export var Menu = function (props) {
         }
     };
     var passedContext = {
-        index: currentActive ? currentActive : '0',
+        index: currentActive || '0',
         onSelect: handleClick,
         mode: mode,
         defaultOpenSubMenus: defaultOpenSubMenus

@@ -30,10 +30,10 @@ export const Progress: FC<ProgressProps> = (props) => {
     theme
   } = props
   return (
-    <div className='xx-progress-bar' style={styles}>
-      <div className='xx-progress-bar-outer' style={{ height: `${strokeHeight}px` }}>
+    <div className='silkworm-progress-bar' style={styles}>
+      <div className='silkworm-progress-bar-outer' style={{ height: `${strokeHeight}px` }}>
         <div
-          className={`xx-progress-bar-inner color-${theme}`}
+          className={`silkworm-progress-bar-inner color-${theme}`}
           style={{ width: `${percent}%` }}
         >
           {showText && <span className='inner-text'>{`${percent}%`}</span>}

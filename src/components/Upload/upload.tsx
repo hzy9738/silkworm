@@ -187,14 +187,14 @@ export const Upload: FC<UploadProps> = (props) => {
     })
   }
   return (
-    <div className='xx-upload-component'>
+    <div className='silkworm-upload-component'>
       {/*<Button btnType="primary" onClick={handleClick}>Upload File</Button>*/}
-      <div className='xx-upload-input' style={{ display: 'inline-block' }} onClick={handleClick}>
+      <div className='silkworm-upload-input' style={{ display: 'inline-block' }} onClick={handleClick}>
         {drag ? <Dragger onFile={(files) => {
           uploadFiles(files)
         }}> {children} </Dragger> : children}
       </div>
-      <input className='xx-file-input'
+      <input className='silkworm-file-input'
         style={{ display: 'none' }}
         onChange={handleFileChange}
         ref={fileInput}

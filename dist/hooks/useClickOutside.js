@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 var useClickOutside = function (ref, handler) {
     useEffect(function () {
         var listener = function (event) {

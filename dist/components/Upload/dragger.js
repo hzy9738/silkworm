@@ -10,8 +10,8 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 import { jsx as _jsx } from "react/jsx-runtime";
-import { useState } from "react";
-import classNames from "classnames";
+import { useState } from 'react';
+import classNames from 'classnames';
 export var Dragger = function (props) {
     var onFile = props.onFile, children = props.children;
     var _a = useState(false), dragOver = _a[0], setDragOver = _a[1];

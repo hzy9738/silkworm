@@ -1,5 +1,5 @@
 {
-  "name": "xxui",
+  "name": "silkworm",
   "version": "0.1.0",
   "description": "React components library",
   "author": "hzy9738",
@@ -16,7 +16,7 @@
   "homepage": "https://github.com/hzy9738/xxui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hzy9738/xxui"
+    "url": "git://github.com/hzy9738/xxui"
   },
   "files": [
     "dist"

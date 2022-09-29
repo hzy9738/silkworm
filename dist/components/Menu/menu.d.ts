@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 declare type MenuMode = 'horizontal' | 'vertical';
 declare type SelectCallBack = (selectedIndex: string) => void;
 export interface MenuProps {

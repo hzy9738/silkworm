@@ -37,7 +37,7 @@ export const MenuContext = createContext<IMenuContext>({ index: '0' })
 export const Menu: React.FC<MenuProps> = (props) => {
   const { className, mode, style, defaultIndex, children, defaultOpenSubMenus, onSelect } = props
   const [currentActive, setActive] = useState(defaultIndex)
-  const classes = classNames('xx-menu', className, {
+  const classes = classNames('silkworm-menu', className, {
     'menu-vertical': mode === 'vertical',
     'menu-horizontal': mode !== 'vertical'
   })

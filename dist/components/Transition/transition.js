@@ -21,10 +21,10 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 import { jsx as _jsx } from "react/jsx-runtime";
-import { CSSTransition } from "react-transition-group";
+import { CSSTransition } from 'react-transition-group';
 var Transition = function (props) {
     var children = props.children, classNames = props.classNames, animation = props.animation, wrapper = props.wrapper, restProps = __rest(props, ["children", "classNames", "animation", "wrapper"]);
-    return (_jsx(CSSTransition, __assign({ classNames: classNames ? classNames : animation }, restProps, { children: wrapper ? _jsx("div", { children: children }) : children })));
+    return (_jsx(CSSTransition, __assign({ classNames: classNames || animation }, restProps, { children: wrapper ? _jsx("div", { children: children }) : children })));
 };
 Transition.defaultProps = {
     unmountOnExit: true,

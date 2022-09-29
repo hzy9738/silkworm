@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 export declare type ButtonSize = 'lg' | 'sm';
 export declare type ButtonType = 'primary' | 'default' | 'danger' | 'link';
 interface BaseButtonProps {

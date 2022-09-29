@@ -1,13 +1,13 @@
-.xx-progress-bar {
+.silkworm-progress-bar {
   width: 100%;
   box-sizing: border-box;
-  .xx-progress-bar-outer {
+  .silkworm-progress-bar-outer {
     border-radius: $progress-border-radius;
     background-color: $progress-bg;
     overflow: hidden;
     position: relative;
   }
-  .xx-progress-bar-inner {
+  .silkworm-progress-bar-inner {
     position: absolute;
     left: 0;
     top: 0;

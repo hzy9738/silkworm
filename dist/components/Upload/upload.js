@@ -19,10 +19,10 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     return to.concat(ar || Array.prototype.slice.call(from));
 };
 import { jsxs as _jsxs, jsx as _jsx } from "react/jsx-runtime";
-import axios from "axios";
-import { useRef, useState } from "react";
-import UploadList from "./uploadList";
-import Dragger from "./dragger";
+import axios from 'axios';
+import { useRef, useState } from 'react';
+import UploadList from './uploadList';
+import Dragger from './dragger';
 export var Upload = function (props) {
     var action = props.action, defaultFileLst = props.defaultFileLst, beforeUpload = props.beforeUpload, onProgress = props.onProgress, onSuccess = props.onSuccess, onError = props.onError, onChange = props.onChange, onRemove = props.onRemove, headers = props.headers, name = props.name, data = props.data, withCredentials = props.withCredentials, accept = props.accept, multiple = props.multiple, drag = props.drag, children = props.children;
     var fileInput = useRef(null);
@@ -31,7 +31,7 @@ export var Upload = function (props) {
         setFileList(function (prevList) {
             return prevList.map(function (file) {
                 if (file.uid === uploadFile.uid) {
-                    return __assign(__assign({}, file), uploadFile);
+                    return __assign(__assign({}, file), uploadObj);
                 }
                 else {
                     return file;
@@ -136,9 +136,9 @@ export var Upload = function (props) {
             }
         });
     };
-    return (_jsxs("div", __assign({ className: "xx-upload-component" }, { children: [_jsx("div", __assign({ className: 'xx-upload-input', style: { display: 'inline-block' }, onClick: handleClick }, { children: drag ? _jsxs(Dragger, __assign({ onFile: function (files) {
+    return (_jsxs("div", __assign({ className: 'xx-upload-component' }, { children: [_jsx("div", __assign({ className: 'xx-upload-input', style: { display: 'inline-block' }, onClick: handleClick }, { children: drag ? _jsxs(Dragger, __assign({ onFile: function (files) {
                         uploadFiles(files);
-                    } }, { children: [" ", children, " "] })) : children })), _jsx("input", { className: "xx-file-input", style: { display: "none" }, onChange: handleFileChange, ref: fileInput, accept: accept, multiple: multiple, type: "file" }), _jsx(UploadList, { fileList: fileList, onRemove: handleRemove })] })));
+                    } }, { children: [" ", children, " "] })) : children })), _jsx("input", { className: 'xx-file-input', style: { display: 'none' }, onChange: handleFileChange, ref: fileInput, accept: accept, multiple: multiple, type: 'file' }), _jsx(UploadList, { fileList: fileList, onRemove: handleRemove })] })));
 };
 Upload.defaultProps = {
     name: 'file'

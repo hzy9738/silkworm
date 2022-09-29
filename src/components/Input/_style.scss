@@ -1,4 +1,4 @@
-.xx-input-wrapper {
+.silkworm-input-wrapper {
   display: flex;
   width: 100%;
   margin-bottom: 30px;
@@ -18,10 +18,10 @@
     }
   }
 }
-.icon-wrapper+.xx-input-inner {
+.icon-wrapper+.silkworm-input-inner {
   padding-right: 35px;
 }
-.xx-input-inner {
+.silkworm-input-inner {
   width: 100%;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
@@ -60,8 +60,8 @@
     opacity: 1;
   }
 }
-.xx-input-group-prepend,
-.xx-input-group-append {
+.silkworm-input-group-prepend,
+.silkworm-input-group-append {
   display: flex;
   align-items: center;
   padding: $input-padding-y $input-padding-x;
@@ -76,27 +76,27 @@
   border: $input-border-width solid $input-group-addon-border-color;
   border-radius: $input-border-radius;
 }
-.xx-input-group-append + .btn {
+.silkworm-input-group-append + .btn {
   padding: 0;
   border: 0;
 }
-.input-group > .xx-input-group-prepend,
-.input-group.input-group-append > .xx-input-inner {
+.input-group > .silkworm-input-group-prepend,
+.input-group.input-group-append > .silkworm-input-inner {
   @include border-right-radius(0);
 }
 
-.input-group > .xx-input-group-append,
-.input-group.input-group-prepend > .xx-input-inner {
+.input-group > .silkworm-input-group-append,
+.input-group.input-group-prepend > .silkworm-input-inner {
   @include border-left-radius(0);
 }
 
-.input-size-sm .xx-input-inner {
+.input-size-sm .silkworm-input-inner {
   padding: $input-padding-y-sm $input-padding-x-sm;
   font-size: $input-font-size-sm;
   border-radius: $input-border-radius-sm;
 }
 
-.input-size-lg .xx-input-inner {
+.input-size-lg .silkworm-input-inner {
   padding: $input-padding-y-lg $input-padding-x-lg;
   font-size: $input-font-size-lg;
   border-radius: $input-border-radius-lg;
