@@ -15,12 +15,12 @@ import { jsx as _jsx } from "react/jsx-runtime";
  * ### 引用方法
  *
  * ~~~js
- * import { Progress } from 'xxui'
+ * import { Progress } from 'silkworm'
  * ~~~
  */
 export var Progress = function (props) {
     var percent = props.percent, strokeHeight = props.strokeHeight, showText = props.showText, styles = props.styles, theme = props.theme;
-    return (_jsx("div", __assign({ className: 'xx-progress-bar', style: styles }, { children: _jsx("div", __assign({ className: 'xx-progress-bar-outer', style: { height: "".concat(strokeHeight, "px") } }, { children: _jsx("div", __assign({ className: "xx-progress-bar-inner color-".concat(theme), style: { width: "".concat(percent, "%") } }, { children: showText && _jsx("span", __assign({ className: 'inner-text' }, { children: "".concat(percent, "%") })) })) })) })));
+    return (_jsx("div", __assign({ className: 'silkworm-progress-bar', style: styles }, { children: _jsx("div", __assign({ className: 'silkworm-progress-bar-outer', style: { height: "".concat(strokeHeight, "px") } }, { children: _jsx("div", __assign({ className: "silkworm-progress-bar-inner color-".concat(theme), style: { width: "".concat(percent, "%") } }, { children: showText && _jsx("span", __assign({ className: 'inner-text' }, { children: "".concat(percent, "%") })) })) })) })));
 };
 Progress.defaultProps = {
     strokeHeight: 15,

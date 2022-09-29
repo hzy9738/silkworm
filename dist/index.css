@@ -466,7 +466,7 @@ main {
     color: #6c757d;
     pointer-events: none; }
 
-.xx-menu {
+.silkworm-menu {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -474,49 +474,49 @@ main {
   list-style: none;
   border-bottom: 1px solid #dee2e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .xx-menu .menu-item {
+  .silkworm-menu .menu-item {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
-    .xx-menu .menu-item:hover, .xx-menu .menu-item:focus {
+    .silkworm-menu .menu-item:hover, .silkworm-menu .menu-item:focus {
       text-decoration: none; }
-    .xx-menu .menu-item.is-disabled {
+    .silkworm-menu .menu-item.is-disabled {
       color: #6c757d;
       pointer-events: none;
       cursor: default; }
-    .xx-menu .menu-item.is-active, .xx-menu .menu-item:hover {
+    .silkworm-menu .menu-item.is-active, .silkworm-menu .menu-item:hover {
       color: #0d6efd;
       border-bottom: 2px solid #0d6efd; }
-  .xx-menu .submenu-item {
+  .silkworm-menu .submenu-item {
     position: relative; }
-    .xx-menu .submenu-item .submenu-title {
+    .silkworm-menu .submenu-item .submenu-title {
       display: flex;
       align-items: center; }
-    .xx-menu .submenu-item .arrow-icon {
+    .silkworm-menu .submenu-item .arrow-icon {
       transition: transform .25s ease-in-out;
       margin-left: 3px; }
-    .xx-menu .submenu-item:hover .arrow-icon {
+    .silkworm-menu .submenu-item:hover .arrow-icon {
       transform: rotate(180deg); }
-    .xx-menu .submenu-item .is-vertical .arrow-icon {
+    .silkworm-menu .submenu-item .is-vertical .arrow-icon {
       transform: rotate(0deg) !important; }
-    .xx-menu .submenu-item .is-vertical.is-opened .arrow-icon {
+    .silkworm-menu .submenu-item .is-vertical.is-opened .arrow-icon {
       transform: rotate(180deg) !important; }
-    .xx-menu .submenu-item .xx-submenu {
+    .silkworm-menu .submenu-item .silkworm-submenu {
       list-style: none;
       padding-left: 0;
       white-space: nowrap; }
-      .xx-menu .submenu-item .xx-submenu .menu-item {
+      .silkworm-menu .submenu-item .silkworm-submenu .menu-item {
         padding: 0.5rem 1rem;
         cursor: pointer;
         transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
         color: #212529; }
-        .xx-menu .submenu-item .xx-submenu .menu-item.is-active, .xx-menu .submenu-item .xx-submenu .menu-item:hover {
+        .silkworm-menu .submenu-item .silkworm-submenu .menu-item.is-active, .silkworm-menu .submenu-item .silkworm-submenu .menu-item:hover {
           color: #0d6efd !important; }
 
 .menu-horizontal > .menu-item {
   border-bottom: 2px solid transparent; }
 
-.menu-horizontal .xx-submenu {
+.menu-horizontal .silkworm-submenu {
   position: absolute;
   background: #fff;
   z-index: 100;
@@ -560,12 +560,12 @@ main {
 .icon-dark {
   color: #343a40; }
 
-.xx-input-wrapper {
+.silkworm-input-wrapper {
   display: flex;
   width: 100%;
   margin-bottom: 30px;
   position: relative; }
-  .xx-input-wrapper .icon-wrapper {
+  .silkworm-input-wrapper .icon-wrapper {
     position: absolute;
     height: 100%;
     width: 35px;
@@ -575,13 +575,13 @@ main {
     top: 0;
     display: flex;
     align-items: center; }
-    .xx-input-wrapper .icon-wrapper svg {
+    .silkworm-input-wrapper .icon-wrapper svg {
       color: #6c757d; }
 
-.icon-wrapper + .xx-input-inner {
+.icon-wrapper + .silkworm-input-inner {
   padding-right: 35px; }
 
-.xx-input-inner {
+.silkworm-input-inner {
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -595,21 +595,21 @@ main {
   border-radius: 0.25rem;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
-  .xx-input-inner:focus {
+  .silkworm-input-inner:focus {
     color: #495057;
     background-color: #fff;
     border-color: #8bbafe;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25); }
-  .xx-input-inner::placeholder {
+  .silkworm-input-inner::placeholder {
     color: #6c757d;
     opacity: 1; }
-  .xx-input-inner:disabled, .xx-input-inner[readonly] {
+  .silkworm-input-inner:disabled, .silkworm-input-inner[readonly] {
     background-color: #e9ecef;
     opacity: 1; }
 
-.xx-input-group-prepend,
-.xx-input-group-append {
+.silkworm-input-group-prepend,
+.silkworm-input-group-append {
   display: flex;
   align-items: center;
   padding: 0.375rem 0.75rem;
@@ -624,34 +624,34 @@ main {
   border: 1px solid #ced4da;
   border-radius: 0.25rem; }
 
-.xx-input-group-append + .btn {
+.silkworm-input-group-append + .btn {
   padding: 0;
   border: 0; }
 
-.input-group > .xx-input-group-prepend,
-.input-group.input-group-append > .xx-input-inner {
+.input-group > .silkworm-input-group-prepend,
+.input-group.input-group-append > .silkworm-input-inner {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .xx-input-group-append,
-.input-group.input-group-prepend > .xx-input-inner {
+.input-group > .silkworm-input-group-append,
+.input-group.input-group-prepend > .silkworm-input-inner {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
-.input-size-sm .xx-input-inner {
+.input-size-sm .silkworm-input-inner {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
 
-.input-size-lg .xx-input-inner {
+.input-size-lg .silkworm-input-inner {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-.xx-auto-complete {
+.silkworm-auto-complete {
   position: relative; }
 
-.xx-suggestion-list {
+.silkworm-suggestion-list {
   list-style: none;
   padding-left: 0;
   white-space: nowrap;
@@ -663,28 +663,28 @@ main {
   border: 1px solid #dee2e6;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
   width: 100%; }
-  .xx-suggestion-list .suggstions-loading-icon {
+  .silkworm-suggestion-list .suggstions-loading-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 75px; }
-  .xx-suggestion-list .suggestion-item {
+  .silkworm-suggestion-list .suggestion-item {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     color: #212529; }
-    .xx-suggestion-list .suggestion-item.is-active {
+    .silkworm-suggestion-list .suggestion-item.is-active {
       background: #0d6efd !important;
       color: #fff !important; }
-    .xx-suggestion-list .suggestion-item:hover {
+    .silkworm-suggestion-list .suggestion-item:hover {
       color: #0d6efd !important; }
 
-.xx-upload-list {
+.silkworm-upload-list {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-.xx-uploader-dragger {
+.silkworm-uploader-dragger {
   background: #f8f9fa;
   border: 1px dashed #dee2e6;
   border-radius: 4px;
@@ -693,13 +693,13 @@ main {
   width: 360px;
   height: 180px;
   text-align: center; }
-  .xx-uploader-dragger:hover {
+  .silkworm-uploader-dragger:hover {
     border: 1px dashed #0d6efd; }
-  .xx-uploader-dragger.is-dragover {
+  .silkworm-uploader-dragger.is-dragover {
     border: 2px dashed #0d6efd;
     background: rgba(13, 110, 253, 0.2); }
 
-.xx-upload-list-item {
+.silkworm-upload-list-item {
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   font-size: 14px;
   line-height: 1.8;
@@ -708,47 +708,47 @@ main {
   border-radius: 4px;
   min-width: 200px;
   position: relative; }
-  .xx-upload-list-item:first-child {
+  .silkworm-upload-list-item:first-child {
     margin-top: 10px; }
-  .xx-upload-list-item .file-name {
+  .silkworm-upload-list-item .file-name {
     margin-left: 5px;
     margin-right: 40px; }
-    .xx-upload-list-item .file-name svg {
+    .silkworm-upload-list-item .file-name svg {
       margin-right: 5px;
       color: #adb5bd; }
-  .xx-upload-list-item .file-name-error {
+  .silkworm-upload-list-item .file-name-error {
     color: #dc3545; }
-    .xx-upload-list-item .file-name-error svg {
+    .silkworm-upload-list-item .file-name-error svg {
       color: #dc3545; }
-  .xx-upload-list-item .file-status {
+  .silkworm-upload-list-item .file-status {
     display: block;
     position: absolute;
     right: 5px;
     top: 0;
     line-height: inherit; }
-  .xx-upload-list-item .file-actions {
+  .silkworm-upload-list-item .file-actions {
     display: none;
     position: absolute;
     right: 7px;
     top: 0;
     line-height: inherit;
     cursor: pointer; }
-  .xx-upload-list-item:hover {
+  .silkworm-upload-list-item:hover {
     background-color: #e9ecef; }
-    .xx-upload-list-item:hover .file-status {
+    .silkworm-upload-list-item:hover .file-status {
       display: none; }
-    .xx-upload-list-item:hover .file-actions {
+    .silkworm-upload-list-item:hover .file-actions {
       display: block; }
 
-.xx-progress-bar {
+.silkworm-progress-bar {
   width: 100%;
   box-sizing: border-box; }
-  .xx-progress-bar .xx-progress-bar-outer {
+  .silkworm-progress-bar .silkworm-progress-bar-outer {
     border-radius: 0.25rem;
     background-color: #e9ecef;
     overflow: hidden;
     position: relative; }
-  .xx-progress-bar .xx-progress-bar-inner {
+  .silkworm-progress-bar .silkworm-progress-bar-inner {
     position: absolute;
     left: 0;
     top: 0;
@@ -759,23 +759,23 @@ main {
     border-radius: 0.25rem;
     line-height: 1;
     transition: width 0.6s ease; }
-    .xx-progress-bar .xx-progress-bar-inner .inner-text {
+    .silkworm-progress-bar .silkworm-progress-bar-inner .inner-text {
       color: #fff;
       font-size: 0.75rem;
       margin: 0 5px; }
-  .xx-progress-bar .color-primary {
+  .silkworm-progress-bar .color-primary {
     background-color: #0d6efd; }
-  .xx-progress-bar .color-secondary {
+  .silkworm-progress-bar .color-secondary {
     background-color: #6c757d; }
-  .xx-progress-bar .color-success {
+  .silkworm-progress-bar .color-success {
     background-color: #52c41a; }
-  .xx-progress-bar .color-info {
+  .silkworm-progress-bar .color-info {
     background-color: #17a2b8; }
-  .xx-progress-bar .color-warning {
+  .silkworm-progress-bar .color-warning {
     background-color: #fadb14; }
-  .xx-progress-bar .color-danger {
+  .silkworm-progress-bar .color-danger {
     background-color: #dc3545; }
-  .xx-progress-bar .color-light {
+  .silkworm-progress-bar .color-light {
     background-color: #f8f9fa; }
-  .xx-progress-bar .color-dark {
+  .silkworm-progress-bar .color-dark {
     background-color: #343a40; }

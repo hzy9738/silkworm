@@ -42,7 +42,7 @@ export var SubMenu = function (props) {
         onMouseLeave: function (e) { handleMouse(e, false); }
     } : {};
     var renderChildren = function () {
-        var subMenuClasses = classNames('xx-submenu', {
+        var subMenuClasses = classNames('silkworm-submenu', {
             'menu-opened': menuOpen
         });
         var childrenComponent = React.Children.map(children, function (child, i) {

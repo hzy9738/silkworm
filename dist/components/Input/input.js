@@ -28,14 +28,14 @@ import Icon from '../Icon/icon';
  *
  * ~~~js
  * // 这样引用
- * import { Input } from 'xxui'
+ * import { Input } from 'silkworm'
  * ~~~
  * 支持 HTMLInput 的所有基本属性
  */
 export var Input = function (props) {
     var _a;
     var disabled = props.disabled, size = props.size, icon = props.icon, prepend = props.prepend, append = props.append, style = props.style, restProps = __rest(props, ["disabled", "size", "icon", "prepend", "append", "style"]);
-    var classes = classNames('xx-input-wrapper', (_a = {},
+    var classes = classNames('silkworm-input-wrapper', (_a = {},
         _a["input-size-".concat(size)] = size,
         _a['is-disabled'] = disabled,
         _a['input-group'] = prepend || append,
@@ -51,6 +51,6 @@ export var Input = function (props) {
             restProps.value = props.value;
         }
     }
-    return (_jsxs("div", __assign({ className: classes, style: style }, { children: [prepend && _jsx("div", __assign({ className: 'xx-input-group-prepend' }, { children: prepend })), icon && _jsx("div", __assign({ className: 'icon-wrapper' }, { children: _jsx(Icon, { icon: icon, title: "title-".concat(icon) }) })), _jsx("input", __assign({ className: 'xx-input-inner', disabled: disabled }, restProps)), append && _jsx("div", __assign({ className: 'xx-input-group-append' }, { children: append }))] })));
+    return (_jsxs("div", __assign({ className: classes, style: style }, { children: [prepend && _jsx("div", __assign({ className: 'silkworm-input-group-prepend' }, { children: prepend })), icon && _jsx("div", __assign({ className: 'icon-wrapper' }, { children: _jsx(Icon, { icon: icon, title: "title-".concat(icon) }) })), _jsx("input", __assign({ className: 'silkworm-input-inner', disabled: disabled }, restProps)), append && _jsx("div", __assign({ className: 'silkworm-input-group-append' }, { children: append }))] })));
 };
 export default Input;

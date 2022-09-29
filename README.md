@@ -1,4 +1,4 @@
-## xxui component library
+## silkworm component library
 ## 使用 React+typescript 组件库
 
 
@@ -12,7 +12,7 @@ npm install silkworm --save
 
 ~~~javascript
 // 加载样式
-import 'xxui/dist/index.css'
+import 'silkworm/dist/index.css'
 // 引入组件
 import { Button } from 'silkworm'
 ~~~

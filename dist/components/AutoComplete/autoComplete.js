@@ -32,7 +32,7 @@ import useClickOutside from '../../hooks/useClickOutside';
  *
  * ~~~js
  * // 这样引用
- * import { AutoComplete } from 'xxui'
+ * import { AutoComplete } from 'silkworm'
  * ~~~
  */
 export var AutoComplete = function (props) {
@@ -111,7 +111,7 @@ export var AutoComplete = function (props) {
         return renderOption ? renderOption(item) : item.value;
     };
     var generateDropdown = function () {
-        return (_jsxs("ul", __assign({ className: 'xx-suggestion-list' }, { children: [loading &&
+        return (_jsxs("ul", __assign({ className: 'silkworm-suggestion-list' }, { children: [loading &&
                     _jsx("div", __assign({ className: 'suggstions-loading-icon' }, { children: _jsx(Icon, { icon: 'spinner', spin: true }) })), suggestions.map(function (item, index) {
                     var cnames = classNames('suggestion-item', {
                         'is-active': index === highlightIndex
@@ -119,6 +119,6 @@ export var AutoComplete = function (props) {
                     return (_jsx("li", __assign({ className: cnames, onClick: function () { return handleSelect(item); } }, { children: renderTemplate(item) }), index));
                 })] })));
     };
-    return (_jsxs("div", __assign({ className: 'xx-auto-complete', ref: componentRef }, { children: [_jsx(Input, __assign({ value: inputValue, onChange: handleChange, onKeyDown: handleKeyDown }, restProps)), generateDropdown()] })));
+    return (_jsxs("div", __assign({ className: 'silkworm-auto-complete', ref: componentRef }, { children: [_jsx(Input, __assign({ value: inputValue, onChange: handleChange, onKeyDown: handleKeyDown }, restProps)), generateDropdown()] })));
 };
 export default AutoComplete;

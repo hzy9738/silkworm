@@ -28,13 +28,13 @@ import classNames from 'classnames';
  * ### 引用方法
  *
  * ~~~js
- * import { Icon } from 'xxui'
+ * import { Icon } from 'silkworm'
  * ~~~
  */
 export var Icon = function (props) {
     var _a;
     var className = props.className, theme = props.theme, restProps = __rest(props, ["className", "theme"]);
-    var classes = classNames('xx-icon', className, (_a = {},
+    var classes = classNames('silkworm-icon', className, (_a = {},
         _a["icon-".concat(theme)] = theme,
         _a));
     return (_jsx(FontAwesomeIcon, __assign({ className: classes }, restProps)));

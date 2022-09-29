@@ -16,7 +16,7 @@ export interface ProgressProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Progress } from 'xxui'
+ * import { Progress } from 'silkworm'
  * ~~~
  */
 export declare const Progress: FC<ProgressProps>;
