@@ -1,5 +1,5 @@
 {
-  "name": "silkworm",
+  "name": "zongone",
   "version": "0.1.0",
   "description": "React components library",
   "author": "hzy9738",
@@ -13,10 +13,10 @@
     "UI",
     "React"
   ],
-  "homepage": "https://github.com/hzy9738/silkworm",
+  "homepage": "https://github.com/hzy9738/zongone",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hzy9738/silkworm"
+    "url": "git://github.com/hzy9738/zongone"
   },
   "files": [
     "dist"

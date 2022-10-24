@@ -1,20 +1,20 @@
-## silkworm component library
+## zongone component library
 ## 使用 React+typescript 组件库
 
 
 ### 安装
 
 ~~~javascript
-npm install silkworm --save
+npm install zongone --save
 ~~~
 
 ### 使用
 
 ~~~javascript
 // 加载样式
-import 'silkworm/dist/index.css'
+import 'zongone/dist/index.css'
 // 引入组件
-import { Button } from 'silkworm'
+import { Button } from 'zongone'
 ~~~
 
 ### 一些本地开发命令
