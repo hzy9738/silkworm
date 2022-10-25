@@ -16,13 +16,13 @@ export var MenuContext = createContext({ index: '0' });
 /**
  * 为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
  * ~~~js
- * import { Menu } from 'silkworm'
+ * import { Menu } from 'zongone'
  * ~~~
  */
 export var Menu = function (props) {
     var className = props.className, mode = props.mode, style = props.style, defaultIndex = props.defaultIndex, children = props.children, defaultOpenSubMenus = props.defaultOpenSubMenus, onSelect = props.onSelect;
     var _a = useState(defaultIndex), currentActive = _a[0], setActive = _a[1];
-    var classes = classNames('silkworm-menu', className, {
+    var classes = classNames('zongone-menu', className, {
         'menu-vertical': mode === 'vertical',
         'menu-horizontal': mode !== 'vertical'
     });

@@ -24,13 +24,13 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
  *
  * ~~~js
  * // 这样引用
- * import { Input } from 'silkworm'
+ * import { Input } from 'zongone'
  * ~~~
  * 支持 HTMLInput 的所有基本属性
  */
 export const Input: FC<InputProps> = (props) => {
   const { disabled, size, icon, prepend, append, style, ...restProps } = props
-  const classes = classNames('silkworm-input-wrapper', {
+  const classes = classNames('zongone-input-wrapper', {
     [`input-size-${size}`]: size,
     'is-disabled': disabled,
     'input-group': prepend || append,
@@ -49,10 +49,10 @@ export const Input: FC<InputProps> = (props) => {
 
   return (
     <div className={classes} style={style}>
-      {prepend && <div className='silkworm-input-group-prepend'>{prepend}</div>}
+      {prepend && <div className='zongone-input-group-prepend'>{prepend}</div>}
       {icon && <div className='icon-wrapper'><Icon icon={icon} title={`title-${icon}`}></Icon></div>}
-      <input className='silkworm-input-inner' disabled={disabled} {...restProps} />
-      {append && <div className='silkworm-input-group-append'>{append}</div>}
+      <input className='zongone-input-inner' disabled={disabled} {...restProps} />
+      {append && <div className='zongone-input-group-append'>{append}</div>}
     </div>
   )
 }

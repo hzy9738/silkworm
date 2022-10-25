@@ -39,7 +39,7 @@ export const SubMenu: React.FC<SubMenuProps> = (props) => {
     onMouseLeave: (e: React.MouseEvent) => { handleMouse(e, false) }
   } : {}
   const renderChildren = () => {
-    const subMenuClasses = classNames('silkworm-submenu', {
+    const subMenuClasses = classNames('zongone-submenu', {
       'menu-opened': menuOpen
     })
     const childrenComponent = React.Children.map(children, (child, i) => {

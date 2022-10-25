@@ -27,7 +27,7 @@ import classNames from 'classnames';
  * ### 引用方法
  *
  * ~~~js
- * import { Button } from 'silkworm'
+ * import { Button } from 'zongone'
  * ~~~
  */
 export var Button = function (props) {

@@ -136,9 +136,9 @@ export var Upload = function (props) {
             }
         });
     };
-    return (_jsxs("div", __assign({ className: 'silkworm-upload-component' }, { children: [_jsx("div", __assign({ className: 'silkworm-upload-input', style: { display: 'inline-block' }, onClick: handleClick }, { children: drag ? _jsxs(Dragger, __assign({ onFile: function (files) {
+    return (_jsxs("div", __assign({ className: 'zongone-upload-component' }, { children: [_jsx("div", __assign({ className: 'zongone-upload-input', style: { display: 'inline-block' }, onClick: handleClick }, { children: drag ? _jsxs(Dragger, __assign({ onFile: function (files) {
                         uploadFiles(files);
-                    } }, { children: [" ", children, " "] })) : children })), _jsx("input", { className: 'silkworm-file-input', style: { display: 'none' }, onChange: handleFileChange, ref: fileInput, accept: accept, multiple: multiple, type: 'file' }), _jsx(UploadList, { fileList: fileList, onRemove: handleRemove })] })));
+                    } }, { children: [" ", children, " "] })) : children })), _jsx("input", { className: 'zongone-file-input', style: { display: 'none' }, onChange: handleFileChange, ref: fileInput, accept: accept, multiple: multiple, type: 'file' }), _jsx(UploadList, { fileList: fileList, onRemove: handleRemove })] })));
 };
 Upload.defaultProps = {
     name: 'file'

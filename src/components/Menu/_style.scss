@@ -1,4 +1,4 @@
-.silkworm-menu {
+.zongone-menu {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -51,7 +51,7 @@
         transform: rotate(180deg) !important;
       }
     }
-    .silkworm-submenu {
+    .zongone-submenu {
       //display: none;
       list-style:none;
       padding-left: 0;
@@ -67,7 +67,7 @@
         }
       }
     }
-    .silkworm-submenu.menu-opened {
+    .zongone-submenu.menu-opened {
       //display: block;
     }
   }
@@ -77,7 +77,7 @@
   >.menu-item {
     border-bottom: $menu-item-active-border-width solid transparent;
   }
-  .silkworm-submenu {
+  .zongone-submenu {
     position: absolute;
     background: $white;
     z-index: 100;

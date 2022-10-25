@@ -12,10 +12,10 @@ const UploadList: FC<UploadListProps> = (props) => {
   const { fileList, onRemove } = props
 
   return (
-    <ul className='silkworm-upload-list'>
+    <ul className='zongone-upload-list'>
       {fileList.map(item => {
         return (
-          <li className='silkworm-upload-list-item' key={item.uid}>
+          <li className='zongone-upload-list-item' key={item.uid}>
             <span className={`file-name file-name-${item.status}`}>
               <Icon icon='file-alt' theme='secondary'/>
               {item.name}

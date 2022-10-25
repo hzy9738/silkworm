@@ -20,7 +20,7 @@ export declare type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
  * ### 引用方法
  *
  * ~~~js
- * import { Button } from 'silkworm'
+ * import { Button } from 'zongone'
  * ~~~
  */
 export declare const Button: React.FC<ButtonProps>;

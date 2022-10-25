@@ -22,7 +22,7 @@ export interface AutoCompleteProps extends Omit<InputProps, 'onSelect'> {
  *
  * ~~~js
  * // 这样引用
- * import { AutoComplete } from 'silkworm'
+ * import { AutoComplete } from 'zongone'
  * ~~~
  */
 export const AutoComplete: FC<AutoCompleteProps> = (props) => {
@@ -103,7 +103,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
   }
   const generateDropdown = () => {
     return (
-      <ul className='silkworm-suggestion-list'>
+      <ul className='zongone-suggestion-list'>
         {loading &&
                   <div className='suggstions-loading-icon'>
                     <Icon icon='spinner' spin/>
@@ -123,7 +123,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
     )
   }
   return (
-    <div className='silkworm-auto-complete' ref={componentRef}>
+    <div className='zongone-auto-complete' ref={componentRef}>
       <Input value={inputValue}
         onChange={handleChange}
         onKeyDown={handleKeyDown}

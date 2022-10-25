@@ -13,7 +13,7 @@ export interface IconProps extends FontAwesomeIconProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Icon } from 'silkworm'
+ * import { Icon } from 'zongone'
  * ~~~
  */
 export declare const Icon: React.FC<IconProps>;

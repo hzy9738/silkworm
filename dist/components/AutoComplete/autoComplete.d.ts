@@ -14,7 +14,7 @@ export interface AutoCompleteProps extends Omit<InputProps, 'onSelect'> {
  *
  * ~~~js
  * // 这样引用
- * import { AutoComplete } from 'silkworm'
+ * import { AutoComplete } from 'zongone'
  * ~~~
  */
 export declare const AutoComplete: FC<AutoCompleteProps>;

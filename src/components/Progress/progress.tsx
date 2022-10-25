@@ -18,7 +18,7 @@ export interface ProgressProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Progress } from 'silkworm'
+ * import { Progress } from 'zongone'
  * ~~~
  */
 export const Progress: FC<ProgressProps> = (props) => {
@@ -30,10 +30,10 @@ export const Progress: FC<ProgressProps> = (props) => {
     theme
   } = props
   return (
-    <div className='silkworm-progress-bar' style={styles}>
-      <div className='silkworm-progress-bar-outer' style={{ height: `${strokeHeight}px` }}>
+    <div className='zongone-progress-bar' style={styles}>
+      <div className='zongone-progress-bar-outer' style={{ height: `${strokeHeight}px` }}>
         <div
-          className={`silkworm-progress-bar-inner color-${theme}`}
+          className={`zongone-progress-bar-inner color-${theme}`}
           style={{ width: `${percent}%` }}
         >
           {showText && <span className='inner-text'>{`${percent}%`}</span>}

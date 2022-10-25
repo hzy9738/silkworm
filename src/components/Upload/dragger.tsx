@@ -9,7 +9,7 @@ interface DraggerProps {
 export const Dragger: FC<DraggerProps> = (props) => {
   const { onFile, children } = props
   const [dragOver, setDragOver] = useState(false)
-  const classes = classNames('silkworm-uploader-dragger', {
+  const classes = classNames('zongone-uploader-dragger', {
     'is-dragover': dragOver
   })
   const handleDrop = (e: DragEvent<HTMLElement>) => {

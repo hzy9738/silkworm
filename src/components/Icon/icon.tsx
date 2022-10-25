@@ -16,12 +16,12 @@ export interface IconProps extends FontAwesomeIconProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Icon } from 'silkworm'
+ * import { Icon } from 'zongone'
  * ~~~
  */
 export const Icon: React.FC<IconProps> = (props) => {
   const { className, theme, ...restProps } = props
-  const classes = classNames('silkworm-icon', className, {
+  const classes = classNames('zongone-icon', className, {
     [`icon-${theme}`]: theme
   })
   return (

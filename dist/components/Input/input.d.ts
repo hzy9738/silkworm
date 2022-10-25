@@ -19,7 +19,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
  *
  * ~~~js
  * // 这样引用
- * import { Input } from 'silkworm'
+ * import { Input } from 'zongone'
  * ~~~
  * 支持 HTMLInput 的所有基本属性
  */
