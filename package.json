@@ -25,13 +25,11 @@
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "classnames": "^2.3.1",
     "react-transition-group": "^4.4.5",
-    "web-vitals": "^2.1.4",
-    "classnames": "^2.3.1"
+    "axios": "^0.27.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -102,6 +100,8 @@
     "node-sass": "^7.0.1",
     "prop-types": "^15.8.1",
     "rimraf": "^3.0.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
     "typescript": "^4.8.2",
     "typescript-eslint-parser": "^22.0.0"
   }
